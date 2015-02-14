@@ -18,10 +18,13 @@ sh polipo_setup.sh
 echo "copying necessary files"
 echo "polipo" >> ~/.bashrc
 cp -f inittab /etc/inittab
-
+mkdir /var/cache/polipo
 echo "INSTALL COMPLETE"
 echo "Your IP Address is:"
 hostname -I
+echo "Starting Proxy..."
+echo "Use CTRL + C to halt program"
+polipo
 exit
 ###############################################################################
 End of File
