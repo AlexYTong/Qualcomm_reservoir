@@ -20,7 +20,9 @@ echo "polipo" >> ~/.bashrc
 cp -f inittab /etc/inittab
 
 echo "INSTALL COMPLETE"
-
+echo "Your IP Address is:"
+hostname -I
+exit
 ###############################################################################
 End of File
 ###############################################################################
