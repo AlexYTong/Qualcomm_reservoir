@@ -1,0 +1,38 @@
+Authors: Alex Tong, Jason Fan, Cori Jacoby, April Tran, Kabir Singh
+Date:    14 February 2015
+
+This is the ABOUT documentation for the Qualcomm Reservoir platform created
+during the 2015 IDHacks at Tufts University.
+
+The SETUP information can be found in the SETUP_README file.
+
+The Reservoir system works by simulating a cache on a Raspberry Pi by
+utilizing the Polipo program. The Raspberry Pi acts as a proxy -- 
+devices, such as the students' tablets, will communicate with a network,
+such as a BRCK, via the Raspberry Pi. Client requests, such as lesson 
+information,are cached in the Raspberry Pi so that further requests bounce
+back from the proxy with the correct request answers without further data 
+consumption from the network.
+
+The .iso provided aims to deliver a solution that can be set up/deployed by
+teachers with no knowledge of Linux systems or minimal tech literacy.
+
+List of Files Included:
+
+README_SETUP     - installation instructions 
+README_ABOUT     - notes about Reservoir system
+
+setup.sh         - set up script for Reservoir system
+polipo_setup.sh  - polipo init script  (invoked via setup.sh)
+texinfo_setup.sh - texinfo init script (invoked via setup.sh)
+
+polipo.tar.gz    - compressed polipo program
+texinfo-5.2.tar.gz - compressed texinfo program (polipo dependency) 
+
+inittab          - modified conf file to allow for automatic login on pi
+
+Known Bugs/Issues
+-Unable to manually wipe Polipo cache (default set to 1d expiration)
+-.iso is still being compiled as of 2/14/15 @ noon
+
+

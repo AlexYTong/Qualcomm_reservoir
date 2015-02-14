@@ -1,0 +1,39 @@
+README
+
+Written on February 14, 2015 for the IDHack Qualcomm Challenge at Tufts
+Written by Alex Tong, April Tran, Cori Jacoby, Jason Fan, and Kabir Singh
+
+Credit to Juliusz Chroboczek for his invaluable contributions to Polipo
+Credit to the Qualcomm Tech Mentors at the hackathon for their endless patience
+with our never ending questions
+
+This project implements a raspberry pi based web server cache ..
+
+SET-UP
+
+Pi
+
+Once the program is downloaded from gitHub, run the command:
+"sudo sh setup.sh"
+in Qualcomm_reservoir folder.
+
+This will completely set up the program on the RaspberryPi and ensure the
+caching system will automatically be engaged each time the Pi is turned on.
+
+
+Tablet
+
+To tether the tablet to the program, click on the Setting button in the main
+menu. Make sure wi-fi is turned on and in that menu, click on the desired
+network. In the menu, enter the password and before clicking continue, click 
+the show advanced options box. 
+Further options should show up, the first being a "Proxy settings" drop-down 
+menu. In this menu, the user should select the "Manual" option.
+Under the "Proxy host name" option, the IP address of the Pi should be entered.
+This will either be provided or, if you are the one running the Pi setup with
+a monitor, the monitor will show the IP address as the last thing after setup.
+Finally under "Proxy port", "8123" should be entered. After this, the user push
+the "Connect" button and the tablet should be connected to the system.
+
+If the user pressed "Connect" before checking "Show Advanced Options," the user
+can select the network again and press the "Forget" button before retrying.
