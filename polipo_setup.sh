@@ -7,9 +7,5 @@ echo "installing polipo"
 cd polipo
 make all
 make install
+cd ..
 echo "installed polipo"
-
-echo "copying necessary files"
-echo "polipo" >> ~/.bashrc
-cp -f inittab /etc/inittab
-
