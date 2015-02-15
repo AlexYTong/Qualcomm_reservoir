@@ -1,6 +1,6 @@
 #README
 
-Created on February 14, 2015 during IDHack at Tufts
+Created on February 14, 2015 during IDHack at Tufts   
 Written by Alex Tong, April Tran, Cori Jacoby, Jason Fan, and Kabir Singh
 
 This project implements a raspberry pi based web server cache using the proxy
@@ -13,6 +13,6 @@ networks smaller than roughly 100 nodes. With many devices attempting to access
 similar data-sets. This creates a cheap localization effect similar to the more
 expensive CDN's developing around the globe.
 
-Credit to Juliusz Chroboczek for his invaluable contributions to Polipo
+Credit to Juliusz Chroboczek for his invaluable contributions to Polipo   
 Credit to the Qualcomm Tech Mentors at the hackathon for their endless patience
 with our never ending questions
