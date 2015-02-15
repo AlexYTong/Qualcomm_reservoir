@@ -1,39 +1,41 @@
-README
+README_SETUP
 
 Written on February 14, 2015 for the IDHack Qualcomm Challenge at Tufts
 Written by Alex Tong, April Tran, Cori Jacoby, Jason Fan, and Kabir Singh
 
-Credit to Juliusz Chroboczek for his invaluable contributions to Polipo
-Credit to the Qualcomm Tech Mentors at the hackathon for their endless patience
-with our never ending questions
+This file details setup needed to operate both the raspberry pi proxy server
+and the android devices attached to such a server. 
+It assumes:
+    Keyboard input and terminal output for raspberry pi device.
+    Code repository most recently hosted at:
+        http://github.com/atong01/Qualcomm_reservoir
 
-This project implements a raspberry pi based web server cache ..
 
-SET-UP
+SETUP INSTRUCTIONS
+##################
 
-Pi
+RaspberryPi (RPI)
 
 Once the program is downloaded from gitHub, run the command:
 "sudo sh setup.sh"
-in Qualcomm_reservoir folder.
+in Qualcomm_reservoir directory.
 
-This will completely set up the program on the RaspberryPi and ensure the
-caching system will automatically be engaged each time the Pi is turned on.
-
+This script will setup the following:
+    The polipo web proxy cache and dependencies (assuming a raspbian OS)
+    Automatic login for the RPI
+    Automatic start of the polipo program at login
 
 Tablet
 
-To tether the tablet to the program, click on the Setting button in the main
-menu. Make sure wi-fi is turned on and in that menu, click on the desired
+To tether a android based tablet to the program, click on the Setting button
+in the main menu. Make sure wi-fi is enabled and register for the desired
 network. In the menu, enter the password and before clicking continue, click 
-the show advanced options box. 
-Further options should show up, the first being a "Proxy settings" drop-down 
-menu. In this menu, the user should select the "Manual" option.
-Under the "Proxy host name" option, the IP address of the Pi should be entered.
-This will either be provided or, if you are the one running the Pi setup with
-a monitor, the monitor will show the IP address as the last thing after setup.
-Finally under "Proxy port", "8123" should be entered. After this, the user push
-the "Connect" button and the tablet should be connected to the system.
+the show advanced options box. Further options should appear, the first a
+"Proxy settings" drop-down menu. In this menu, the user should select the "Manual"
+option. Under the "Proxy host name" option, the IP address of the Pi should be
+entered. Finally under "Proxy port", "8123" should be entered. Press the connect
+button, and the tablet should be setup to use the raspberry pi proxy on that
+local network.
 
-If the user pressed "Connect" before checking "Show Advanced Options," the user
-can select the network again and press the "Forget" button before retrying.
+Note: as of Feb 2015, android tablets are set to ignore a proxy server if they
+are unable to connect to the specified device.

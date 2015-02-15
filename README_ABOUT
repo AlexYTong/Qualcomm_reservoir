@@ -1,5 +1,7 @@
-Authors: Alex Tong, Jason Fan, Cori Jacoby, April Tran, Kabir Singh
-Date:    14 February 2015
+README_ABOUT
+
+Created on February 14, 2015 during IDHack at Tufts
+Written by Alex Tong, April Tran, Cori Jacoby, Jason Fan, and Kabir Singh
 
 This is the ABOUT documentation for the Qualcomm Reservoir platform created
 during the 2015 IDHacks at Tufts University.
@@ -34,5 +36,5 @@ inittab          - modified conf file to allow for automatic login on pi
 Known Bugs/Issues
 -Unable to manually wipe Polipo cache (default set to 1d expiration)
 -.iso is still being compiled as of 2/14/15 @ noon
-
-
+-System runs off of stable software versions on Raspbian 2015-01-31 but there
+    is no system in place for updating such software
